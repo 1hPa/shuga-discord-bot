@@ -1,0 +1,30 @@
+name: Workflows
+on: [push, pull_request]
+
+jobs:
+  commit-lint:
+    runs-on: ubuntu-latest
+    steps:
+        #リポジトリをチェックアウト
+      - name: Checkout
+        uses: actions/checkout@v2
+        #CI高速化のためにキャッシュを使用
+      - name: Fetch cache
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/yarn
+          key: ${{ runner.os }}-${{ github.ref }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ github.ref }}-
+            ${{ runner.os }}-
+        #Node.jsのセットアップ
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+        #依存関係をインストール
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+        #commitlintを行う
+      - name: Commit lint
+        run: yarn commitlint --from=HEAD
