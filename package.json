@@ -4,7 +4,7 @@
   "description": "This is a DiscordBot.",
   "main": "index.js",
   "scripts": {
-    "commitlint": "commitlint -f HEAD"
+    "commitlint": "commitlint -f HEAD",
     "cz": "git-cz"
   },
   "repository": {
@@ -26,7 +26,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        "prepare-commit-msg" : "exec < /dev/tty && git cz --hook || true",
+        "commit-msg" : "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "config": {
