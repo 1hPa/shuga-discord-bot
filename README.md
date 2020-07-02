@@ -1,1 +1,2 @@
 # shuga-DiscordBot
+> Discordのbotです.
