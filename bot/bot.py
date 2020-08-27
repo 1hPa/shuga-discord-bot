@@ -12,3 +12,8 @@ class Bot(commands.Bot):
         print(self.user.name)
         print(self.user.id)
         print('-----')
+
+#Bot instantiation and launch process
+if name == 'main':
+    bot = Bot(command_prefix='!')
+    bot.run(token)
