@@ -14,6 +14,6 @@ class Bot(commands.Bot):
         print('-----')
 
 #Bot instantiation and launch process
-if name == 'main':
+if __name__ == '__main__':
     bot = Bot(command_prefix='!')
     bot.run(token)
