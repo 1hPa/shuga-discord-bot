@@ -13,3 +13,5 @@ class RepCog(commands.Cog):
 
         if message.content == 'こんにちは':
             await message.channel.send('こんにちは')
+def setup(bot):
+    bot.add_cog(RepCog(bot))
