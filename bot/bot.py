@@ -3,6 +3,11 @@ import os
 
 token = os.environ['DISCORD_BOT_TOKEN']
 
+#Store cogs
+INITIAL_EXTENSIONS = [
+    'cogs.reply'
+]
+
 #class definition
 class Bot(commands.Bot):
     #call when ready
