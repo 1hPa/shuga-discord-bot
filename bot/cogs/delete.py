@@ -12,9 +12,12 @@ class DeleteCog(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def on_message(self, ctx, message):
-        for improper in SENSITIVE_WORD:
-            if message==improper:
-                await ctx.message.delete()
+    async def on_message(self, message):
+        if message.author.bot:
+            return
+
+        if message.content==SENSITIVE_WORD:
+            await ctx.message.delete()
+
 def setup(bot):
     bot.add_cog(DeleteCog(bot))
