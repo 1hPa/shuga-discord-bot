@@ -16,3 +16,5 @@ class DeleteCog(commands.Cog):
         for improper in SENSITIVE_WORD:
             if message==improper:
                 await ctx.message.delete()
+def setup(bot):
+    bot.add_cog(DeleteCog(bot))
