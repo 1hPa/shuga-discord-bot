@@ -9,7 +9,7 @@ class GreetingCog(commands.Cog):
 
     @tasks.loop(seconds=60)
     async def loop():
-        channel = client.get_channel(CHANNEL_ID)
+        channel = discord.Client().get_channel(CHANNEL_ID)
         await channel.send('おはよう')
 #Loop processing
 loop.start()
