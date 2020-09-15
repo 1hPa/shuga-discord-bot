@@ -1,3 +1,5 @@
+import discord
+from datetime import datetime
 from discord.ext import tasks, commands
 
 CHANNEL_ID = 728821929103851521
