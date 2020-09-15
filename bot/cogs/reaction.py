@@ -12,3 +12,6 @@ class RxnCog(commands.Cog):
 
         if GRASS in message.content:
             await message.channel.send(../../img/grass.png)
+
+def setup(bot):
+    bot.add_cog(RxnCog(bot))
