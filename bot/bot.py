@@ -6,7 +6,7 @@ token = os.environ['DISCORD_BOT_TOKEN']
 
 #Store cogs
 INITIAL_EXTENSIONS = [
-    'cogs.reply'
+    'cogs.reply',
     'cogs.delete'
 ]
 
