@@ -17,7 +17,7 @@ class DeleteCog(commands.Cog):
             return
 
         if message.content in SENSITIVE_WORD:
-            await message.channel.delete()
+            await message.delete()
 
 def setup(bot):
     bot.add_cog(DeleteCog(bot))
