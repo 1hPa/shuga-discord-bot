@@ -4,6 +4,9 @@
   "description": "This is a DiscordBot.",
   "license": "MIT",
   "main": "index.js",
+  "scripts": {
+      "commitlint": "commitlint -f HEAD"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/1hPa/shuga-DiscordBot.git"
