@@ -2,6 +2,11 @@ import discord
 from discord.ext import commands
 from datetime import datetime 
 
+KOSEN_QUOTE = [
+    '微積は高専生の九九だからねー',
+    'ちーがーうーよー'
+]
+
 class QuoteCog(commands.Cog):
     #constructor
     def __init__(self, bot):
