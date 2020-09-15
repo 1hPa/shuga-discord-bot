@@ -9,7 +9,8 @@ INITIAL_EXTENSIONS = [
     'cogs.reply',
     'cogs.delete',
     'cogs.quote',
-    'cogs.greeting'
+    'cogs.greeting',
+    'cogs.reaction'
 ]
 
 #class definition
