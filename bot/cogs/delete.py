@@ -11,7 +11,7 @@ class DeleteCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.Cog.listener()
     async def on_message(self, message):
         if message.author.bot:
             return
