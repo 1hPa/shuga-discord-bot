@@ -8,7 +8,8 @@ token = os.environ['DISCORD_BOT_TOKEN']
 INITIAL_EXTENSIONS = [
     'cogs.reply',
     'cogs.delete',
-    'cogs.quote'
+    'cogs.quote',
+    'cogs.greeting'
 ]
 
 #class definition
