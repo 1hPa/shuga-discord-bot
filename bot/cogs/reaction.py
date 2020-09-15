@@ -1,6 +1,12 @@
 from discord.ext import commands
 import discord
 
+GRASS = [
+    '草',
+    'くさ',
+    'grass',
+]
+
 class RxnCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
