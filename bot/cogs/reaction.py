@@ -16,7 +16,7 @@ class RxnCog(commands.Cog):
         if message.author.bot:
             return
 
-        if GRASS in message.content:
+        if GRASS == message.content:
             await message.channel.send('www')
             await message.channel.send(../../img/grass.png)
 
