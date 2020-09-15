@@ -4,7 +4,7 @@ import discord
 GRASS = [
     '草',
     'くさ',
-    'grass',
+    'grass'
 ]
 
 class RxnCog(commands.Cog):
