@@ -7,6 +7,11 @@
   "scripts": {
       "commitlint": "commitlint -f HEAD"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/1hPa/shuga-DiscordBot.git"
