@@ -12,6 +12,7 @@ class RepCog(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self, ctx, message):
         async with ctx.typing():
+            await asyncio.sleep(5)
             if message.author.bot:
                 return
 
@@ -19,7 +20,6 @@ class RepCog(commands.Cog):
                 await message.channel.send('こんにちは')
 
             if 'w' in message.content:
-                await asyncio.sleep(5)
                 await message.channel.send(random.choice(('www', '草')))
 def setup(bot):
     bot.add_cog(RepCog(bot))
