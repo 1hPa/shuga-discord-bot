@@ -17,8 +17,7 @@ class RxnCog(commands.Cog):
             return
 
         if message.content in GRASS:
-            await message.channel.send('www')
-            await message.channel.send(../../img/grass.png)
+            await message.channel.send(file=discord.File('../../img/grass.png'), 'www')
 
 def setup(bot):
     bot.add_cog(RxnCog(bot))
