@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import random
+import asyncio
 
 #Define class
 class RepCog(commands.Cog):
