@@ -12,15 +12,15 @@ class RepCog(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self, ctx, message):
 
-        await asyncio.sleep(5)
-
         if message.author.bot:
             return
 
         if message.content == 'こんにちは':
+            await asyncio.sleep(3)
             await ctx.send('こんにちは')
 
         if 'w' in message.content:
+            await asyncio.sleep(3)
             await ctx.send(random.choice(('www', '草')))
 def setup(bot):
     bot.add_cog(RepCog(bot))
