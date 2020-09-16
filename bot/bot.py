@@ -29,13 +29,6 @@ class Bot(commands.Bot):
             except Exception:
                 traceback.print_exc()
 
-    #call when ready
-    async def on_ready(self):
-        print('-----')
-        print(self.user.name)
-        print(self.user.id)
-        print('-----')
-
 #Bot instantiation and launch process
 if __name__ == '__main__':
     bot = Bot(command_prefix='!')
