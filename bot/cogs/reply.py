@@ -17,9 +17,9 @@ class RepCog(commands.Cog):
                 return
 
             if message.content == 'こんにちは':
-                await message.channel.send('こんにちは')
+                await ctx.send('こんにちは')
 
             if 'w' in message.content:
-                await message.channel.send(random.choice(('www', '草')))
+                await ctx.send(random.choice(('www', '草')))
 def setup(bot):
     bot.add_cog(RepCog(bot))
