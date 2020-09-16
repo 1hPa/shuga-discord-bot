@@ -15,9 +15,9 @@ class RepCog(commands.Cog):
         if message.author.bot:
             return
 
-        if message.content == 'こんにちは':
+        if 'おやすみ' in message.content:
             await asyncio.sleep(3)
-            await message.channel.send('こんにちは')
+            await message.channel.send('(๑´•ω•)੭ ੈおやすみなさい')
 
         if 'w' in message.content:
             await asyncio.sleep(3)
