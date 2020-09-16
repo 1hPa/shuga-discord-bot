@@ -1,11 +1,12 @@
 from discord.ext import commands
 import discord
-
+'''
 GRASS = [
     '草',
     'くさ',
     'grass'
 ]
+'''
 
 class RxnCog(commands.Cog):
     def __init__(self, bot):
@@ -16,7 +17,7 @@ class RxnCog(commands.Cog):
         if message.author.bot:
             return
 
-        if message.content in GRASS:
+        if message.content == '草':
             await message.channel.send(file=discord.File('../../img/grass.png'), 'www')
 
 def setup(bot):
