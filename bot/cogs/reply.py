@@ -17,7 +17,7 @@ class RepCog(commands.Cog):
 
         if 'しゅが' in message.content:
             await asyncio.sleep(1)
-            await message.chennel.send('なぁ〜に？')
+            await message.channel.send('なぁ〜に？')
 
         if 'おやすみ' in message.content:
             await asyncio.sleep(3)
