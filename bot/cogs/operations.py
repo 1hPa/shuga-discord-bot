@@ -27,7 +27,7 @@ class OpCog(commands.Cog):
     await ctx.send('Add the following numbers')
     await ctx.send(str(left)+'+'+str(right))
 
-    @commands.comannd()
+    @commands.comand()
     async def opans(self, ctx, ansin):
         global ans
         #Compare with answer
