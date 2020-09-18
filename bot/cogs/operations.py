@@ -21,3 +21,7 @@ class OpCog(commands.Cog):
 
     #Answer
     ans = left+right
+
+    #Output message
+    print('Add the following numbers')
+    print(str(left)+'+'+str(right))
