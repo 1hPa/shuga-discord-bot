@@ -34,3 +34,6 @@ class OpCog(commands.Cog):
             await ctx.send('Correct!!')
         else:
             await ctx.send('Wrong answer...\nans = '+str(ans))
+
+def setup(bot):
+    bot.add_cog(OpCog(bot))
