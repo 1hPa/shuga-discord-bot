@@ -28,3 +28,9 @@ class OpCog(commands.Cog):
 
     #Input number
     ansin = int(input())
+
+    #Compare with answer
+    if ansin == (left+right):
+        ctx.send('Correct!!')
+    else:
+        ctx.send('Wrong answer...\nans = '+str(ans))
