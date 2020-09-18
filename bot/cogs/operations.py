@@ -27,6 +27,7 @@ class OpCog(commands.Cog):
     await ctx.send(str(left)+'+'+str(right))
 
     @commands.comannd()
+    async def opans(self, ctx, ansin):
     #Compare with answer
     if ansin == (left+right):
         await ctx.send('Correct!!')
