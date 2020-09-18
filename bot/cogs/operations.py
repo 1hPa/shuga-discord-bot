@@ -18,3 +18,6 @@ class OpCog(commands.Cog):
         '''
         if len(str(left)) >= 2 and len(str(right)) >= 2:
             break
+
+    #Answer
+    ans = left+right
