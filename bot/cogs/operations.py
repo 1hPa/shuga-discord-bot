@@ -25,3 +25,6 @@ class OpCog(commands.Cog):
     #Output message
     print('Add the following numbers')
     print(str(left)+'+'+str(right))
+
+    #Input number
+    ansin = int(input())
