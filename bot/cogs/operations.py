@@ -26,9 +26,7 @@ class OpCog(commands.Cog):
     await ctx.send('Add the following numbers')
     await ctx.send(str(left)+'+'+str(right))
 
-    #Input number
-    ansin = int(input())
-
+    @commands.comannd()
     #Compare with answer
     if ansin == (left+right):
         await ctx.send('Correct!!')
