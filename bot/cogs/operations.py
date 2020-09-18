@@ -29,7 +29,6 @@ class OpCog(commands.Cog):
 
     @commands.comand()
     async def opans(self, ctx, ansin):
-        global ans
         #Compare with answer
         if ansin == ans:
             await ctx.send('Correct!!')
