@@ -23,14 +23,14 @@ class OpCog(commands.Cog):
     ans = left+right
 
     #Output message
-    print('Add the following numbers')
-    print(str(left)+'+'+str(right))
+    await ctx.send('Add the following numbers')
+    await ctx.send(str(left)+'+'+str(right))
 
     #Input number
     ansin = int(input())
 
     #Compare with answer
     if ansin == (left+right):
-        ctx.send('Correct!!')
+        await ctx.send('Correct!!')
     else:
-        ctx.send('Wrong answer...\nans = '+str(ans))
+        await ctx.send('Wrong answer...\nans = '+str(ans))
