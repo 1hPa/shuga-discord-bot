@@ -10,3 +10,11 @@ class OpCog(commands.Cog):
     #Make command
     @commands.command()
     async def op(self, ctx):
+        while True:
+            left = random.randrange(1000)
+            right = random.randrange(1000)
+        '''
+        2 digits or more
+        '''
+        if len(str(left)) >= 2 and len(str(right)) >= 2:
+            break
