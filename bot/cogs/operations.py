@@ -28,8 +28,9 @@ class OpCog(commands.Cog):
 
     @commands.comannd()
     async def opans(self, ctx, ansin):
-    #Compare with answer
-    if ansin == (left+right):
-        await ctx.send('Correct!!')
-    else:
-        await ctx.send('Wrong answer...\nans = '+str(ans))
+        global ans
+        #Compare with answer
+        if ansin == ans:
+            await ctx.send('Correct!!')
+        else:
+            await ctx.send('Wrong answer...\nans = '+str(ans))
