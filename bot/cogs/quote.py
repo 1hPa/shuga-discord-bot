@@ -5,7 +5,8 @@ import random
 
 KOSEN_QUOTE = [
     '微積は高専生の九九だからねー',
-    'ちーがーうーよー'
+    'ちーがーうーよー',
+    'ﾆｲﾁｬﾝ!ﾆｲﾁｬﾝ!速さってなぁに？'
 ]
 
 class QuoteCog(commands.Cog):
