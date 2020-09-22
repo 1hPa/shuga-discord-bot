@@ -3,11 +3,6 @@ from discord.ext import commands
 import random
 import asyncio
 
-AORI = [
-    '煽り',
-    '煽った'
-]
-
 #Define class
 class RepCog(commands.Cog):
     def __init__(self, bot):
@@ -32,7 +27,7 @@ class RepCog(commands.Cog):
             await asyncio.sleep(3)
             await message.channel.send(random.choice(('www', '草')))
 
-        if '煽り' or '煽った' in message.content:
+        if '煽り' in message.content:
             await asyncio.sleep(1)
             await message.channel.send('煽るな')
 def setup(bot):
