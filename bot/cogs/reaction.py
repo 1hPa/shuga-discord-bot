@@ -17,8 +17,8 @@ class RxnCog(commands.Cog):
         if message.author.bot:
             return
 
-        if message.content == '草':
-            await message.channel.send(file=discord.File('../../img/grass.png'), 'www')
+        if '草' in message.content:
+            await message.channel.send(file=discord.File('../../img/grass.png'))
 
 def setup(bot):
     bot.add_cog(RxnCog(bot))
