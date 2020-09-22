@@ -11,7 +11,8 @@ INITIAL_EXTENSIONS = [
     'cogs.quote',
     'cogs.greeting',
     'cogs.reaction',
-    'cogs.operations'
+    'cogs.operations',
+    'cogs.dakuten'
 ]
 
 #class definition
