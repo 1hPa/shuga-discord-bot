@@ -6,3 +6,9 @@ class DakutenCog(commands.Cog):
     #constructor
     def __init__(self, bot):
     self.bot = bot
+
+    @commands.group()
+    async def dakuten(self, ctx, msg):
+        strlist = msg
+        await ctx.send('゛'.join(list(strlist))+'゛')
+        await ctx.message.delete()
