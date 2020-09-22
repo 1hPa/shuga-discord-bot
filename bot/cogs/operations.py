@@ -17,8 +17,8 @@ class OpCog(commands.Cog):
         '''
         2 digits or more
         '''
-        if len(str(left)) and len(str(right)) >= 2:
-            break
+            if len(str(left)) and len(str(right)) >= 2:
+                break
 
     #Answer
     ans = left+right
