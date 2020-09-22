@@ -32,7 +32,7 @@ class RepCog(commands.Cog):
             await asyncio.sleep(3)
             await message.channel.send(random.choice(('www', '草')))
 
-        if AORI in message.content:
+        if '煽り' or '煽った' in message.content:
             await asyncio.sleep(1)
             await message.channel.send('煽るな')
 def setup(bot):
