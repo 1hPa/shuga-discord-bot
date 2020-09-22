@@ -12,3 +12,6 @@ class DakutenCog(commands.Cog):
         strlist = msg
         await ctx.send('゛'.join(list(strlist))+'゛')
         await ctx.message.delete()
+
+def setup(bot):
+    bot.add_cog(DakutenCog(bot))
