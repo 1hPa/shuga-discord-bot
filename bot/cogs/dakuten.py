@@ -7,7 +7,7 @@ class DakutenCog(commands.Cog):
     def __init__(self, bot):
     self.bot = bot
 
-    @commands.group()
+    @commands.command()
     async def dakuten(self, ctx, msg):
         strlist = msg
         await ctx.send('゛'.join(list(strlist))+'゛')
