@@ -23,7 +23,7 @@ class RepCog(commands.Cog):
             await asyncio.sleep(3)
             await message.channel.send('(๑´•ω•)੭ ੈおやすみなさい')
 
-        if message.content.endwith('w'):
+        if message.content.endswith('w'):
             await asyncio.sleep(3)
             await message.channel.send(random.choice(('www', '草')))
 
