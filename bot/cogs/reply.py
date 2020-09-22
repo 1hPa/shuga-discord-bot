@@ -30,5 +30,9 @@ class RepCog(commands.Cog):
         if '煽り' in message.content:
             await asyncio.sleep(1)
             await message.channel.send('煽るな')
+
+        if 'わかる' in message.content:
+            await message.channel.send(random.choice(('(σ・ω・)σそれな', '╮( •́ω•̀ )╭ﾜｶﾗﾝ')))
+
 def setup(bot):
     bot.add_cog(RepCog(bot))
