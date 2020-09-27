@@ -10,7 +10,7 @@ class DakutenCog(commands.Cog):
     @commands.command()
     async def dakuten(self, ctx, msg):
         strlist = msg
-        await ctx.send('゛'.join(list(strlist))+'゛'+'\nBy'+message.author.mention)
+        await ctx.send('゛'.join(list(strlist))+'゛'+'\nBy'+ctx.author.mention)
         await ctx.message.delete()
 
 def setup(bot):
