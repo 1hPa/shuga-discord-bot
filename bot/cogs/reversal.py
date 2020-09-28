@@ -12,3 +12,5 @@ class ReversalCog(commands.Cog):
         strlist = msg
         await ctx.send(''.join(list(reversed(strlist)))+'\nBy'+ctx.author.mention)
         await ctx.message.delete()
+def setup(bot):
+    bot.add_cog(ReversalCog(bot))
