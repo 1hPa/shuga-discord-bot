@@ -7,7 +7,7 @@ class ReversalCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(alias=['rev'])
     async def reversal(self, ctx, msg):
         strlist = msg
         await ctx.send(''.join(list(reversed(strlist)))+'\nBy'+ctx.author.mention)
